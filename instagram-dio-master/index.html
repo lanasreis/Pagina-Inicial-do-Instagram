@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>Instagram</title>
+    <link rel="icon" href="img/iconInstagram.png">
+</head>
+<body>
+    <div class="instagram-content">
+        <div class="instagram-telefone">
+            <img class="instagram-img" id="ImgCelular" src="img/chatCat.jpg" alt="celular">
+        </div>
+        <div class="instagram-conta">
+            <div class="grupo">
+                <img src="img/instagram-logo.png" class="instagram-logo" alt="instagram-logo">
+                <div class="profile-foto">
+                    <img src="img/Eu_Instagram.jpeg" alt="foto de perfil">
+                </div>
+                <a href="#" class="instagram-login">Continue como lanasreis</a>
+                <a href="#" class="instagram-logout">Remover conta</a>
+            </div>
+
+            <div class="grupo">
+                <p class="sem-conta">Não é lanasreis?</p>
+                <p class="sem-conta">
+                    <span class="link-azul">Alternar Conta</span>
+                    ou
+                    <span class="link-azul">Inscreva-se</span>
+                </p>
+            </div>
+
+            <div class="get-the-app">
+                <p class="get-app">Baixe o aplicativo</p>
+                <div class="download">
+                    <a href="#" class="app-download"></a>
+                    <a href="#" class="app-download"></a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var temp=0;
+        var aux=0
+        setInterval(function(){
+            console.log("tempo "+aux)
+            var elem = document.getElementById('ImgCelular')
+
+            console.log("tempo" + aux)
+            if(aux == 0){
+                elem.src = "img/camera.jpg" 
+            }
+            if(aux == 1){
+                elem.src = "img/feed.jpg" 
+            }
+            if(aux == 2){
+                elem.src = "img/camera2.jpg" 
+            }
+            if(aux == 3){
+                elem.src = "img/perfil.jpg" 
+            }
+            if(aux == 4){
+                elem.src = "img/chatCat.jpg"
+                aux=-1 
+            }
+            aux++
+            
+        }, 4000)
+    </script>
+</body>
+</html>
